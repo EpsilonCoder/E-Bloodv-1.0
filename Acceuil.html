@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Acceuil</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+ 
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+ <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block" style="color: black;">E-BLOOD</span>
+      </a>
+      <i style="color:red;" class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i style="color:red;" class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i style="color:red;" class="bi bi-bell"></i>
+            <span class="badge bg-dark badge-number">4</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Vous avez 4  notifications
+              <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">Voir tout</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital Pikine</h4>
+                <p>Un homme a besoin de sang </p>
+                <p>30 min. ago  <u>Dr Cheikh Sow</u></p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital de Diourbel</h4>
+                <p></p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital Fann</h4>
+                <p>Les poches de sang sont vides </p>
+                <p>2 hrs. ago Dr Sarr</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Clinique Simplon</h4>
+                <p>Urgence un passient a besoin de sang O+</p>
+                <p>4 hrs. ago  Dr Samba Kane</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">voir tous les notifications</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i style="color:red;" class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>
+
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              Vous avez 3messages 
+              <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            
+            <li class="message-item">
+               <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                <h4>Hopital de Diourbel</h4>
+                <p>Merci a docteur Kane ,vous avez sauvé une vie  </p>
+                <p>1 hr. ago  <u>Dr Cheikh Sow</u></p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                  <h4>Abdou laye Sall</h4>
+                  <p>Merci a vous avez sauvé ma mere </p>
+                  <p>6 hrs. ago <u>>Abdou laye Sall</u></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                 <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                  <h4>Jack Ethienne Ndiaye </h4>
+                  <p>Merci a vous je suis sauvé , grace a vous </p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Voir plus</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.PNG" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Mouhamed Dieye</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i style="color:red;" class="bi bi-person"></i>
+                <span>Mon Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i style="color:red;" class="bi bi-gear"></i>
+                <span>Parametre Compte</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i style="color:red;" class="bi bi-question-circle"></i>
+                <span>Avoir de l'aide</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i style="color:red;" class="bi bi-box-arrow-right"></i>
+                <span>Deconnection</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+ <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-heading">Pages</li>
+
+       <li class="nav-item">
+        <a class="nav-link " href="profile.html">
+          <i  class="text-secondary bi bi-person"></i>
+          <span class="text-dark">Profil</span>
+        </a>
+        
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link bg-danger " href="Acceuil.html">
+          <i  class="text-secondary bi bi-house-door"></i>
+          <span class="text-dark">Acceuil</span>
+        </a>
+        
+      </li>
+      
+
+         <li class="nav-item">
+        <a class="nav-link" href="propos.html">
+          <i  class="text-secondary bi-file-earmark-fill "></i>
+          <span class="text-dark">A propos</span>
+        </a>
+        
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashbord.html">
+          <i  class="text-secondary bi bi-grid"></i>
+          <span class="text-dark">Tableau de bord</span>
+        </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link " href="pages-faq.html">
+          <i  class="text-secondary bi bi-question-circle"></i>
+          <span class="text-dark">F.A.Q</span>
+        </a>
+      </li>
+      
+     
+      <li class="nav-item">
+        <a  class="nav-link  text-white" href="standBy.html">
+          <i class=" bi bi-hourglass"></i>
+          <span class="text-dark">Publication en attente</span>
+        </a>
+      </li>
+  
+
+  </aside>
+
+  <main id="main" class="main p-1">
+    <section class="section row">
+      <div class="card">
+        <div class="border-transparent">
+          <h3 class="card-title text-uppercase ">Record Sauveur de vie</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table m-0">
+              <thead>
+              <tr>
+                <th>N°</th>
+                <th>Nom d'utlisateur</th>
+                <th>Nombre de vies sauvees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="btn btn-sm "><button class="btn btn-success"> 1</button></td>
+                <td class="text-center">Youssoufa Sall</td>
+                <td class="text-center">27</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-warning ">2</button></td>
+                <td class="text-center">Cheikh SOW</td>
+                <td class="text-center">25</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-danger">3</button></td>
+                <td class="text-center">Mamadou Faye</td>
+                <td class="text-center">23</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-info ">4</button></td>
+                <td class="text-center">Saliou Ndiaye</td>
+                <td class="text-center">17</td>
+              </tr>
+              <tr>
+                <td><button class="btn btn-">5</button></td>
+                <td class="text-center">Anta Diop</td>
+                <td class="text-center">15</td>
+              </tr>
+                
+              </tbody>
+            </table>
+          </div>
+          <!-- /.table-responsive -->
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer clearfix">
+          <a href="javascript:void(0)" class="btn btn-sm btn-dark float-right">Voir plus</a>
+        </div>
+        <!-- /.card-footer -->
+      </div>
+
+      <h2 class="mx-auto text-center w-75 fw-bold text-danger">Faire un don de sang, C'est souvez des vies</h2>
+      <article class="mx-auto my-5">
+        <article class="card">
+          <div class="card-body d-flex flex-column align-items-center mt-4">
+            <div class="col">
+              <img src="./assets/img/mbodj.jpg" class=" img-fluid rounded-circle " width="50px" alt="avatar" />
+            </div>
+            <div class="col text-center">
+              <h5 class="card-title font-weight-bold pb-0 mb-0">Sidy Ndiaye</h5>
+             
+              <p class="card-text"><i class="bi bi-clock pe-2 fs-10 fw-bold"></i>26 Nov, il ya 2h</p>
+            </div>
+            <div>
+              <a href=""><i class="bi bi-three-dots-horizontal text-dark"></i></a>
+            </div>
+          </div>
+          <p class="p-1">
+            Un patient a besoin de toute urgence d’une poche de sang du groupe O-.
+            Le patient en question habite la région de Sédhiou.
+            A toutes les personnes compatibles se trouvant à Sedhiou veuillez nous contacter au 784246975.
+            Partagez au maximum svp 🙏.
+          </p>
+          
+          <div class=" ">
+            <div class="d-flex justify-content-between px-2 fs-10">
+
+              <span class="">
+                <i class="fas fa-heart text-danger p-md-1 my-1 me-0" data-mdb-toggle="tooltip" data-mdb-placement="top"
+                  title="I like it"></i>34
+              </span>
+              <span>5 commentaires</span>
+            </div>
+            <hr class="dashed mt-1">
+
+            <div class="d-flex justify-content-between align-items-center p-2 pb-0 fs-12">
+              <a href="" class="text-dark"><i class="p-1 fas fa-hands-helping"></i>Prommesse de Don</a>
+              <a href="" class="text-dark"><i class="p-1 bi bi-chat-left-dots"></i>Commenter</a>
+              <a href="" class="text-dark"><i class="p-1 fas fa-share-square"></i>Partager</a>
+            </div>
+            <hr class="dashed">
+            <div class="commentaire">
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card-body d-flex flex-column align-items-center mt-4">
+            <div class="col">
+              <img src="./assets/img/moustapha.jpg" class=" img-fluid rounded-circle " width="50px" alt="avatar" />
+            </div>
+            <div class="col text-center">
+              <h5 class="card-title font-weight-bold pb-0 mb-0">Sidy Ndiaye</h5>
+              <p class="card-text"><i class="bi bi-clock pe-2 fs-10 fw-bold"></i>26 Nov, il ya 2h</p>
+            </div>
+            <div>
+              <a href=""><i class="bi bi-three-dots-horizontal text-dark"></i></a>
+            </div>
+          </div>
+          <p class="p-1">
+            DON DE SANG ET ALLAITEMENT, COMPATIBLES SOUS CERTAINES CONDITIONS
+            Si l’allaitement n’est en rien un problème lorsque vous souhaitez donner votre sang.
+            <a href="" class="fw-bold text-dark">...Voir Plus</a>
+          </p>
+          
+          <div class=" ">
+            <div class="d-flex justify-content-between px-2 fs-10">
+
+              <span class="">
+                <i class="fas fa-heart text-danger p-md-1 my-1 me-0" data-mdb-toggle="tooltip" data-mdb-placement="top"
+                  title="I like it"></i>122
+              </span>
+              <span>5 commentaires</span>
+            </div>
+            <hr class="dashed mt-1">
+
+            <div class="d-flex justify-content-between align-items-center p-2 pb-0 fs-12">
+              <a href="" class="text-dark"><i class="p-1 fas fa-hands-helping"></i>Prommesse de Don</a>
+              <a href="" class="text-dark"><i class="p-1 bi bi-chat-left-dots"></i>Commenter</a>
+              <a href="" class="text-dark"><i class="p-1 fas fa-share-square"></i>Partager</a>
+            </div>
+            <hr class="dashed">
+            <div class="commentaire">
+
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body d-flex flex-column align-items-center mt-4">
+            <div class="col">
+              <img src="./assets/img/mbodj.jpg" class=" img-fluid rounded-circle " width="50px" alt="avatar" />
+            </div>
+            <div class="col text-center">
+              <h5 class="card-title font-weight-bold pb-0 mb-0">Sidy Ndiaye</h5>
+              <p class="card-text"><i class="bi bi-clock pe-2 fs-10 fw-bold"></i>26 Nov, il ya 2h</p>
+            </div>
+            <div>
+              <a href=""><i class="bi bi-three-dots-horizontal text-dark"></i></a>
+            </div>
+          </div>
+          <p class="p-1">
+            Un patient a besoin de toute urgence d’une poche de sang du groupe O-.
+            Le patient en question habite la région de Sédhiou.
+            A toutes les personnes compatibles se trouvant à Sedhiou veuillez nous contacter au 784246975.
+            Partagez au maximum svp 🙏.
+          </p>
+     
+          <div class=" ">
+            <div class="d-flex justify-content-between px-2 fs-10">
+
+              <span class="">
+                <i class="fas fa-heart text-danger p-md-1 my-1 me-0" data-mdb-toggle="tooltip" data-mdb-placement="top"
+                  title="I like it"></i>34
+              </span>
+              <span>5 commentaires</span>
+            </div>
+            <hr class="dashed mt-1">
+
+            <div class="d-flex justify-content-between align-items-center p-2 pb-0 fs-12">
+              <a href="" class="text-dark"><i class="p-1 fas fa-hands-helping"></i>Prommesse de Don</a>
+              <a href="" class="text-dark"><i class="p-1 bi bi-chat-left-dots"></i>Commenter</a>
+              <a href="" class="text-dark"><i class="p-1 fas fa-share-square"></i>Partager</a>
+            </div>
+            <hr class="dashed">
+            <div class="commentaire">
+
+            </div>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card-body d-flex flex-column align-items-center mt-4">
+            <div class="col">
+              <img src="./assets/img/moustapha.jpg" class=" img-fluid rounded-circle " width="50px" alt="avatar" />
+            </div>
+            <div class="col text-center">
+              <h5 class="card-title font-weight-bold pb-0 mb-0">Sidy Ndiaye</h5>
+              <!-- <p class="card-text"><i class="bi pe-2 fs-12"></i>07/24/2018</p> -->
+              <p class="card-text"><i class="bi bi-clock pe-2 fs-10 fw-bold"></i>26 Nov, il ya 2h</p>
+            </div>
+            <div>
+              <a href=""><i class="bi bi-three-dots-horizontal text-dark"></i></a>
+            </div>
+          </div>
+          <p class="p-1">
+            DON DE SANG ET ALLAITEMENT, COMPATIBLES SOUS CERTAINES CONDITIONS
+            Si l’allaitement n’est en rien un problème lorsque vous souhaitez donner votre sang.
+            <a href="" class="fw-bold text-dark">...Voir Plus</a>
+          </p>
+
+          <div class=" ">
+            <div class="d-flex justify-content-between px-2 fs-10">
+
+              <span class="">
+                <i class="fas fa-heart text-danger p-md-1 my-1 me-0" data-mdb-toggle="tooltip" data-mdb-placement="top"
+                  title="I like it"></i>122
+              </span>
+              <span>5 commentaires</span>
+            </div>
+            <hr class="dashed mt-1">
+
+            <div class="d-flex justify-content-between align-items-center p-2 pb-0 fs-12">
+              <a href="" class="text-dark"><i class="p-1 fas fa-hands-helping"></i>Prommesse de Don</a>
+              <a href="" class="text-dark"><i class="p-1 bi bi-chat-left-dots"></i>Commenter</a>
+              <a href="" class="text-dark"><i class="p-1 fas fa-share-square"></i>Partager</a>
+            </div>
+            <hr class="dashed">
+            <div class="commentaire">
+
+            </div>
+          </div>
+        </article>
+
+      </article>
+
+    </section>
+  </main>
+
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

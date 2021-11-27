@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>En attente</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Font AweSome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block" style="color: black;">E-BLOOD</span>
+      </a>
+      <i style="color:red;" class="bi bi-list toggle-sidebar-btn"></i>
+    </div>
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i style="color:red;" class="bi bi-search"></i></button>
+      </form>
+    </div>
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i style="color:red;" class="bi bi-bell"></i>
+            <span class="badge bg-dark badge-number">4</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Vous avez 4  notifications
+              <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">Voir tout</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital Pikine</h4>
+                <p>Un homme a besoin de sang </p>
+                <p>30 min. ago  <u>Dr Cheikh Sow</u></p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital de Diourbel</h4>
+                <p></p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-exclamation-circle text-danger"></i>
+              <div>
+                <h4>Hopital Fann</h4>
+                <p>Les poches de sang sont vides </p>
+                <p>2 hrs. ago Dr Sarr</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i style="color:red;" class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Clinique Simplon</h4>
+                <p>Urgence un passient a besoin de sang O+</p>
+                <p>4 hrs. ago  Dr Samba Kane</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">voir tous les notifications</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i style="color:red;" class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a>
+
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              Vous avez 3messages 
+              <a href="#"><span class="badge rounded-pill bg-dark p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            
+            <li class="message-item">
+               <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                <h4>Hopital de Diourbel</h4>
+                <p>Merci a docteur Kane ,vous avez sauvé une vie  </p>
+                <p>1 hr. ago  <u>Dr Cheikh Sow</u></p>
+              </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                  <h4>Abdou laye Sall</h4>
+                  <p>Merci a vous avez sauvé ma mere </p>
+                  <p>6 hrs. ago <u>>Abdou laye Sall</u></p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                 <i style="color:green;" class="bi bi-check-circle text-succes"></i>
+                <div>
+                  <h4>Jack Ethienne Ndiaye </h4>
+                  <p>Merci a vous je suis sauvé , grace a vous </p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Voir plus</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.PNG" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Mouhamed Dieye</span>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i style="color:red;" class="bi bi-person"></i>
+                <span>Mon Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i style="color:red;" class="bi bi-gear"></i>
+                <span>Parametre Compte</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i style="color:red;" class="bi bi-question-circle"></i>
+                <span>Avoir de l'aide</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i style="color:red;" class="bi bi-box-arrow-right"></i>
+                <span>Deconnection</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+  
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-heading">Pages</li>
+
+       <li class="nav-item">
+        <a class="nav-link " href="profile.html">
+          <i  class="text-secondary bi bi-person"></i>
+          <span class="text-dark">Profil</span>
+        </a>
+        
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="Acceuil.html">
+          <i  class="text-secondary bi bi-house-door"></i>
+          <span class="text-dark">Acceuil</span>
+        </a>
+        
+      </li>
+      
+
+         <li class="nav-item">
+        <a class="nav-link " href="propos.html">
+          <i  class="text-secondary bi-file-earmark-fill "></i>
+          <span class="text-dark">A propos</span>
+        </a>
+        
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashbord.html">
+          <i  class="text-secondary bi bi-grid"></i>
+          <span class="text-dark">Tableau de bord</span>
+        </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link " href="pages-faq.html">
+          <i  class="text-secondary bi bi-question-circle"></i>
+          <span class="text-dark">F.A.Q</span>
+        </a>
+      </li>
+      
+     
+      <li class="nav-item">
+        <a  class="nav-link bg-danger" href="standBy.html">
+          <i class=" bi bi-hourglass"></i>
+          <span class="text-dark">Publication en attente</span>
+        </a>
+      </li>
+  
+
+  </aside>
+
+  <main id="main" class="main p-1">
+    <section class="section row mx-0">
+      <div class="col-12 p-2">
+        <div class="card shadow-sm ">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Salamata ndiaye</h5>
+            <h6 class="card-subtitle mb-0 text-muted">il ya 3h</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="d-flex justify-content-between">
+
+              <a href="#" class="btn btn-danger">Approuver</a>
+              <a href="#" class="btn btn-secondary">Refuser</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-2">
+        <div class="card shadow-sm ">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Mami Diawara</h5>
+            <h6 class="card-subtitle mb-0 text-muted">il ya 3h</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="d-flex justify-content-between">
+
+              <a href="#" class="btn btn-danger">Approuver</a>
+              <a href="#" class="btn btn-secondary">Refuser</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 p-2">
+        <div class="card shadow-sm ">
+          <div class="card-body">
+            <h5 class="card-title mb-0">Omar Sall</h5>
+            <h6 class="card-subtitle mb-0 text-muted">il ya 3h</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="d-flex justify-content-between">
+
+              <a href="#" class="btn btn-danger">Approuver</a>
+              <a href="#" class="btn btn-secondary">Refuser</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+  </main>
+
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
